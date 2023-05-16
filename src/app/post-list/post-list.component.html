@@ -1,3 +1,12 @@
 <h1>Post List Component</h1>
 
 <p>{{ fromPostList }}</p>
+
+<img [src]="imgUrl" alt="" />
+
+<h1 [class.text-heading]="isColor">This is class color</h1>
+
+<h2 [style.color]="isColor ? 'blue' : 'green'">This style color</h2>
+<button (click)="clickFunction()">Click me</button>
+<input type="text" (keyup.enter)="keyupFunction(name.value)" #name />
+<input type="text" [(ngModel)]="userText" (keyup.enter)="onKeyup()" />

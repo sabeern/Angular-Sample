@@ -1,0 +1,12 @@
+.text-background {
+  background: yellow;
+}
+.details-form,
+.details-display {
+  margin-top: 20px;
+  text-align: center;
+}
+.main-image {
+  width: 100px;
+  height: 100px;
+}

@@ -1,4 +1,10 @@
 <h1>Hello world</h1>
 <app-navbar></app-navbar>
-<app-post [fromParent]="parentMessage" [personObj]="obj"></app-post>
+<app-post
+  [fromParent]="parentMessage"
+  [personObj]="obj"
+  (messageEmitter)="recieveMessage($event)"
+></app-post>
 <h1>{{ message }}</h1>
+<h4>{{ recievedOutputMessage }}</h4>
+<app-reg-form></app-reg-form>
